@@ -14,10 +14,9 @@ productForm.addEventListener("submit", (e) => {
     let productObject = {id: idData, product: nameData, price: priceData};
     console.log(productObject);
     
-})
+});
 
 
-// const set_test = new Set (
-//     1,1,1,1,1,1,2,2,3,4
-// )
-// console.log(set_test);
+const arra = [1,1,1,2,3,4,5,6,7,7,7]
+const set_test = new Set(arra)
+console.log(set_test)
