@@ -10,6 +10,7 @@
     --background: rgb(219, 212, 245);
     --text: white;
     --div: rgb(241, 146, 241); 
+    --screen: rgb(159, 194, 207);
 }
 
 body {
@@ -62,7 +63,7 @@ aside form {
     gap: 5%;
 }
 
-aside .productForm input {
+aside #productForm input, output {
     width: 50%;
     height: 15%;
     border-radius: 8px;
@@ -73,7 +74,26 @@ aside .productForm input {
     overflow-y: hidden;
 }
 
-aside .productForm input[type=submit] {
+aside #productForm input[type=submit], button {
+    font-size: x-large;
+    font-weight: 600;
+    color: var(--header);
+    border-radius: 50px;
+    width: 40%;
+    border: 2px solid var(--header);
+}
+
+aside #productForm input[type=submit]:active, button:active {
+    border: 5px double var(--header);
+}
+aside #productForm div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+}
+aside #productForm button {
     font-size: x-large;
     font-weight: 600;
     color: var(--header);
@@ -81,6 +101,12 @@ aside .productForm input[type=submit] {
     width: 40%;
 }
 
-aside .productForm input[type=submit]:active {
+aside #productForm output {
+    background-color: var(--screen);
     border: 5px double var(--header);
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
 }
