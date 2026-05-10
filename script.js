@@ -95,6 +95,15 @@ mapForm.addEventListener("submit", (e) => {
     e.preventDefault();
     let category = mapForm.querySelector(".category");
     let pName = mapForm.querySelector(".pName");
-    productMap.set(category.value, pName.value);
-    console.log(productMap)
+    let categoryData = category.value;
+    let pNameData = pName.value;
+    if(categoryData.trim() != "" && pNameData.trim() != ""){
+        productMap.set(categoryData, pNameData);
+        console.log(productMap);
+        category.value = "";
+        pName.value = "";
+    } else {
+        console.error("Fill out to complete form please!");
+    }
+    
 })
