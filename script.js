@@ -97,13 +97,13 @@ mapForm.addEventListener("submit", (e) => {
     let pName = mapForm.querySelector(".pName");
     let categoryData = category.value;
     let pNameData = pName.value;
-    if(categoryData.trim() != "" && pNameData.trim() != ""){
+    if(isNaN(categoryData.trim()) != "" && isNaN(pNameData.trim() != "")){
         productMap.set(categoryData, pNameData);
         console.log(productMap);
         category.value = "";
         pName.value = "";
     } else {
-        console.error("Fill out to complete form please!");
+        console.error("Fill out the complete form please!\nAnd do not use Numbers!");
     }
     
 })
