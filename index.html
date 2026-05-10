@@ -3,34 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Second week</title>
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
 </head>
 <body>
     <header><h1>Data Mangement App</h1></header>
     <main>
         <aside>
-            <h2>Add A New Product</h2>
-            <form method="post" class="productForm" id="productForm">
-                <input class="productName" type="text" placeholder="Add a product name . . ." required>
-                <input class="productPrice" type="number" step="0.01" placeholder="Add a product price . . ." required>
-                <input class="productID" type="number" placeholder="Add a product ID . . ." required>
-                <input type="submit" value="Create">
-            </form>
-            <form method="post" id="productForm" class="setForm">
-                <output class="setNumber"></output>
-                <input type="number" class="addNum" required>
-                <div>
-                    <button type="submit">Add</button> <button type="submit" class="deleteN">Delete</button>
-                </div>
-                <input type="submit" class="hasN" value="Has">
-            </form>
+            <fieldset>
+                <legend>Object creation</legend>
+                <form method="post" class="productForm" id="productForm">
+                    <input class="productName" type="text" placeholder="Add a product name . . ." required>
+                    <input class="productPrice" type="number" step="0.01" placeholder="Add a product price . . ." required>
+                    <input class="productID" type="number" placeholder="Add a product ID . . ." required>
+                    <input type="submit" value="Create">
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>Set Management</legend>
+                <form method="post" id="productForm" class="setForm">
+                    <output class="setNumber"></output>
+                    <input type="number" class="addNum" required>
+                    <div>
+                        <button type="submit">Add</button> <button type="submit" class="deleteN">Delete</button>
+                    </div>
+                    <input type="submit" class="hasN" value="Has">
+                </form>
+            </fieldset>
         </aside>
-        <figure></figure>
+        <figure>
+            <form method="post" id="productForm" class="mapForm">
+                <input type="text" class="category" placeholder="Product Category...">
+                <input type="text" class="pName" placeholder="Product Name...">
+                <input type="submit">
+            </form>
+        </figure>
     </main>
     <script src="script.js"></script>
 </body>
